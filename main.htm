@@ -1,0 +1,96 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>SENSOR STATISTICS VISUALIZATION</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+	<meta http-equiv="refresh" content="600"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+
+<br>
+ <div class="leftCol">
+        <div class="leftTop">Entry id:
+		<br>Name:
+		<br>description:
+		<br>latitude:
+		<br>longitude:
+		 <div id="chart_div" style="width: 400px; height: 120px;"></div>
+		</div>
+        <div class="leftBottom">field1: primary reserviour
+		<br>field2: secondary reservoir
+		<br>field3: third reserviours
+		</div>
+    </div>
+    <div class="rightCol">
+
+<div class="w3-row w3-white w3-padding w3-hide-medium w3-hide-small" style="margin-top:5px;">
+ <div class="w3-col s5 notranslate" style="margin:4px 0 6px 0"><a class="w3schools-logo" href="//www.w3schools.com">NativeSolutions<span class="dotcom">.com</span></a></div>
+ <div class="w3-col s7 w3-margin-top w3-wide w3-hide-medium w3-hide-small">
+  <div class="w3-right" style="position:relative;top:5px;"><b>The Sensor statitics data visualization.</b></div>
+ </div>
+</div>
+<br>
+<div id="slider">
+<div id="headerSlider" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#headerSlider" data-slide-to="0" class="active"></li>
+    <li data-target="#headerSlider" data-slide-to="1"></li>
+    <li data-target="#headerSlider" data-slide-to="2"></li>
+	<li data-target="#headerSlider" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <svg id='svg'/>
+	  <div class="carousel-caption">
+	  <h1>....</h1>
+	  </div>
+    </div>
+    <div class="carousel-item">
+      <svg id='svg1'/>
+	  <div class="carousel-caption">
+	  <h5>...</h5>
+	  </div>
+    </div>
+    <div class="carousel-item">
+      <svg id='svg2'/>
+	  <div class="carousel-caption">
+	  <h5>...</h5>
+	  </div>
+    </div>
+	 <div class="carousel-item">
+      <div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+    </div>
+	  <div class="carousel-caption">
+	  <h5>...</h5>
+	  </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#headerSlider" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#headerSlider" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+ <script src=" https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script src="https://d3js.org/d3.v5.min.js"></script> 
+ <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+ <script src="script.js"></script>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+ 
+<div>
+	
+</div>
+</body>
+</html>
